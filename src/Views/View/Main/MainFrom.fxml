@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="725.0" prefWidth="1248.0" style="-fx-background-color: #457696;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="departmentTableView" layoutX="28.0" layoutY="93.0" prefHeight="572.0" prefWidth="487.0" stylesheets="@../../../Util/tableView.css">
+        <columns>
+          <TableColumn fx:id="fullNameDepartmentColum" prefWidth="308.0" text="Departamento" />
+          <TableColumn fx:id="openColumnDepartment" prefWidth="50.0" text="Abrir" />
+            <TableColumn fx:id="editColumnDepartment" prefWidth="64.0" text="Editar" />
+            <TableColumn fx:id="deleteColumnDepartment" prefWidth="65.0" text="Eliminar" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="agregarDepButton" layoutX="28.0" layoutY="674.0" onAction="#agregarDepartamento" style="-fx-background-color: #c78016;" text="Añadir departamento" textFill="WHITE" />
+      <TableView fx:id="employeesTableView" layoutX="577.0" layoutY="265.0" prefHeight="401.0" prefWidth="642.0" stylesheets="@../../../Util/tableView.css">
+        <columns>
+          <TableColumn fx:id="employeeTableColum" prefWidth="216.0" text="Empleado" />
+          <TableColumn fx:id="ageColum" prefWidth="47.0" text="Edad" />
+          <TableColumn fx:id="TipoTableColum" prefWidth="75.0" text="Tipo" />
+          <TableColumn fx:id="tituloColum" minWidth="0.0" prefWidth="94.0" text="Titulo" />
+            <TableColumn fx:id="editEmployeeColumn" minWidth="0.0" prefWidth="61.0" text="Editar" />
+            <TableColumn fx:id="doBossEmployeeColumn" prefWidth="81.0" text="Hacer Jefe" />  
+          <TableColumn fx:id="deleteEmployeColumn" prefWidth="70.0" text="Eliminar" />    
+        </columns>
+      </TableView>
+      <Label fx:id="labelName" layoutX="738.0" layoutY="27.0" text="Departamento de " textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <ImageView fx:id="imagenPng" fitHeight="154.0" fitWidth="162.0" layoutX="599.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon%20default/hiclipart.com%20(1).png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="AddEmployeeButton" layoutX="577.0" layoutY="674.0" onAction="#AgregarEmpleados" style="-fx-background-color: #c78016;" text="Añadir empleado" textFill="WHITE" />
+      <Label fx:id="nameDepartamentLabel" layoutX="843.0" layoutY="49.0" prefHeight="17.0" prefWidth="162.0" textFill="WHITE" />
+      <Label fx:id="nameBossLabel" layoutX="843.0" layoutY="76.0" prefHeight="17.0" prefWidth="162.0" textFill="WHITE" />
+      <Label fx:id="ageLabel" layoutX="843.0" layoutY="128.0" prefHeight="17.0" prefWidth="162.0" textFill="#f8f8f8" />
+      <Label fx:id="nameDepartmentLabel" layoutX="920.0" layoutY="27.0" text="nameDepartment" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Label fx:id="employeeDirectorLabel" layoutX="815.0" layoutY="80.0" text="Director" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label fx:id="titleEmployeLabel" layoutX="815.0" layoutY="120.0" text="titleEmployee" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label fx:id="ageEmployeeLabel" layoutX="817.0" layoutY="166.0" text="ageDepartment" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <JFXTextField fx:id="departmentSearchTextField" layoutX="292.0" layoutY="45.0" prefHeight="25.0" prefWidth="223.0" promptText="Buscar departamento" style="-fx-background-color: white;" />
+      <JFXTextField fx:id="employeesSearchTextField" layoutX="1040.0" layoutY="223.0" prefHeight="25.0" prefWidth="173.0" promptText="Buscar Empleado" style="-fx-background-color: white;" />
+      <Label fx:id="correoLabel" layoutX="641.0" layoutY="227.0" prefHeight="18.0" prefWidth="269.0" text="correoTxt" textFill="WHITE" />
+      <ImageView fx:id="managerImagenView" fitHeight="26.0" fitWidth="26.0" layoutX="774.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Util/icons/jefeDepartamento.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="titleImageView" fitHeight="26.0" fitWidth="32.0" layoutX="774.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Util/icons/titulo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ageImageView" fitHeight="32.0" fitWidth="35.0" layoutX="771.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Util/icons/edad.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="emailImageView" fitHeight="26.0" fitWidth="32.0" layoutX="599.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Util/icons/email.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,8 @@
+--EMPLOYEE FXML--
+formEmployeeFxml->Views/View/Employee/FormEmployee.fxml
+--DEPARTMENT FXML--
+formatDepartmentFxml->Views/View/Department/formatDepartment.fxml
+--Main FXML--
+mainFromFxml->Views/View/Main/MainFrom.fxml
+--LOGIN FXML--
+loginFxml->Views/View/Login/login.fxml

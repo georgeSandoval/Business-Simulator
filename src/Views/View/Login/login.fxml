@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="359.0" style="-fx-background-color: #27ba86;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXTextField fx:id="userTextField" alignment="CENTER" layoutX="37.0" layoutY="214.0" prefHeight="36.0" prefWidth="292.0" promptText="User" style="-fx-background-color: white;" />
+      <JFXButton fx:id="loginButton" layoutX="144.0" layoutY="343.0" onAction="#loginButtonAction" prefHeight="36.0" prefWidth="76.0" styleClass="btn-primary" text="Aceptar" />
+      <ImageView fx:id="avatarImage" fitHeight="150.0" fitWidth="200.0" layoutX="96.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="errorLabel" layoutX="143.0" layoutY="192.0" text="Error al ingresar!" textFill="#eb0707">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <JFXPasswordField fx:id="passwordTextField" alignment="CENTER" layoutX="37.0" layoutY="283.0" onKeyPressed="#enterKey" prefHeight="36.0" prefWidth="292.0" promptText="Password" style="-fx-background-color: white;" />
+      <JFXButton fx:id="closeButton" layoutX="309.0" layoutY="7.0" onAction="#closeLogin" prefHeight="36.0" prefWidth="31.0" text="X" textFill="#0c1ada">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
